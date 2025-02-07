@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Edit or remove </title>
+</head>
+<body style=" background-color: #212121;color:#fff">
+<ul class="langu">
+    <li>JavaScript</li>
+</ul>
+</body>
+<script>
+    function addLanguage(langName){
+      const li =  documnet.createElement('li');
+      li.innerHTML = '${langName}'
+      documnet.queryselector('.language').appendChild(li)
+    }
+    addLanguage("pyhton")
+    addLanguage("typescript")
+
+    function addOptiLanguage(langName){
+      const li =  document.createElement('li');
+      li.appendChild(document.createTextNode(langName))
+      document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("golang")
+    // Edit 
+  const secondlang =  document.querySelector("li:nth-child(2)")
+  //secondlang.innerHTML = "MOJO"
+document.createElement("li")
+newli.textConetent = "MOJO"
+secondlang.replaceWith(newli)
+
+</script>
+
+</html>

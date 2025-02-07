@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onclickevent(){
+            document.getElementById("click").innerHTML ="<b>" + "Onclick even has been triggered" +"</b>"
+        }
+         function onmouseoverevent(){
+            document.getElementById("msover").style.color ='red'
+        }
+        function onmouseout() {
+        document.getElementById("msout").style.color = 'red';
+        }
+
+        function onmousedown(){
+            document.getElementById("msdown").style.color ='pink';
+        }
+
+    </script>
+</head>
+
+<body style="text-align:center; background-color:greenyellow" >
+    <button onclick="onclickevent()">Click here</button>
+       <p id="click"></p>
+       <p id="msover" onmouseover="onmouseoverevent()">Hover over this text to change its color to red.</p>
+       <p id="msout" onmouseout="onmouseout()">Move the mouse away from this text to change its color to red.</p>
+    <p id="msdown" onmousedown="onmousedown()"> Move the mouse to the down from the text.</p>
+</body>
+</html>
+
+
+<!--
+changes in the state of an object is known as the Evnet 
+1. click
+2. mouseover
+3.mouseout
+4.mousedown
+5.mouseup
+6.mousemove
+-->
